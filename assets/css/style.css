@@ -1,0 +1,101 @@
+:root{
+    --white-color: white;
+    --second-color:  blue;
+    --third-color: aqua;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: var(--white-color);
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.main-bg{
+    background-image: url(../img/sun-tornado.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.second-bg{
+    background-image: url(../img/sun-tornado3.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.main-content{
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+}
+/*Inicio da primeira parte*/
+.home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 100vh;
+    position: relative;
+    
+
+}
+
+.home-content, .home-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    
+}
+
+.home-img img{
+   border: 5px solid black;
+   border-radius: 40% ;
+}
+
+.home-content{
+    text-align: center;
+}
+
+.home h1{
+    color: var(--third-color);
+}
+
+
+/*Inicio da segunda parte*/
+
+.second-bg h1{
+    color: var(--second-color);
+}
+
+/*Inicio da ultima parte*/
+.contact-content{
+    padding: 40px;
+
+}
+
+.contact-content h1{
+    color: var(--third-color);
+}
