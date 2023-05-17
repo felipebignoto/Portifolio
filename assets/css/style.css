@@ -35,6 +35,11 @@ h2{
     min-height: 100vh;
 }
 
+.section h1{
+    align-items: center;
+    text-align: center;
+}
+
 .main-bg{
     background-image: url(../img/sun-tornado.svg);
     background-attachment: fixed;
@@ -58,11 +63,9 @@ h2{
 
 /*Inicio da primeira parte*/
 .home{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     min-height: 100vh;
     position: relative;
-    padding: 50px;
+    padding: 30px;
 }
 
  .home-img{
@@ -72,22 +75,31 @@ h2{
 .home-img img{
    border: 5px solid black;
    border-radius: 40%;
+   width: 100%;
+   margin: 5%;
 }
 
 .home-content{
-    text-align: center;
     display: grid;
-    grid-template-rows: 1fr 2fr ;
-   
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.home-texto{
+    text-align: center;
+    margin: auto;
+}
+
+.home-texto h2{
+    margin-bottom: 10%;
 }
 
 .home h1{
     color: var(--third-color);
+    margin-bottom: 10%;
 }
 
-.home-content-content{
-    width: 90%;
-}
+
 
 /*Inicio da segunda parte*/
 
