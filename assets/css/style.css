@@ -3,6 +3,10 @@
     --second-color:  blue;
     --third-color: rgb(5, 108, 108);
 }
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
 
 *{
     margin: 0;
