@@ -5,7 +5,7 @@
 }
 a{
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--second-color);
 }
 
 *{
@@ -51,6 +51,18 @@ h2{
     color: var(--white-color);
 }
 
+.main-bg h1{
+    color: var(--third-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white-color);
+}
+
+.second-bg h1{
+    color: var(--second-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white-color);
+}
+
 .second-bg{
     background-image: url(../img/sun-tornado3.svg);
     background-attachment: fixed;
@@ -72,7 +84,7 @@ h2{
     padding: 30px;
 }
 
- .home-img{
+.home-img{
     margin: auto;
 }
 
@@ -99,17 +111,14 @@ h2{
 }
 
 .home h1{
-    color: var(--third-color);
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 
 
 /*Inicio da segunda parte*/
 
-.second-bg h1{
-    color: var(--second-color);
-}
+
 
 /*Inicio da ultima parte*/
 .contact-content{
@@ -118,7 +127,7 @@ h2{
 }
 
 .contact-content h1{
-    color: var(--third-color);
+    color: var(--second-color);
 }
 
 .contact-links ion-icon{
