@@ -1,11 +1,11 @@
 :root{
     --white-color: white;
     --second-color:  blue;
-    --third-color: rgb(5, 108, 108);
+    --third-color: rgb(0, 0, 0);
 }
 a{
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--white-color);
 }
 
 *{
@@ -45,7 +45,7 @@ h2{
 }
 
 .main-bg{
-    background-image: url(../img/sun-tornado.svg);
+    background-image: url(../img/subtle-prism.svg);
     background-attachment: fixed;
     background-size: cover;
     color: var(--white-color);
@@ -58,13 +58,13 @@ h2{
 }
 
 .second-bg h1{
-    color: var(--second-color);
+    color: var(--third-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--white-color);
 }
 
 .second-bg{
-    background-image: url(../img/sun-tornado3.svg);
+    background-image: url(../img/subtle-prism2.svg);
     background-attachment: fixed;
     background-size: cover;
     color: var(--white-color);
@@ -110,28 +110,60 @@ h2{
     margin-bottom: 10%;
 }
 
-.home h1{
+.home h1, #contact h1{
     margin-bottom: 5%;
 }
 
 
 
-/*Inicio da segunda parte*/
+/*Inicio da terceira parte*/
 
-
+.skills-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
 
 /*Inicio da ultima parte*/
 .contact-content{
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
 
 }
 
-.contact-content h1{
-    color: var(--second-color);
+.contact-content h2{
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .contact-links ion-icon{
     width: 40px;
     height: 40px;
-    padding: 10px;
+    
+}
+
+.contact-content a, .contact-content ul li{
+    text-align: center;
+}
+
+.contact-links ion-icon:hover{
+    color: rgb(154, 111, 3);
+    
+}
+
+.contact-informacoes, .contact-links{
+    margin: auto;
+    height: 40%;
+    padding: 18px;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-informacoes{
+    line-height: 2;
 }
