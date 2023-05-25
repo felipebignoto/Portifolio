@@ -8,7 +8,6 @@
 
 a{
     text-decoration: none;
-    
 }
 
 *{
@@ -155,6 +154,38 @@ h2{
 .home h1{
     margin-bottom: 5%;
 }
+/*INICIO DA SEGUNDA PARTE -PROJETOS*/
+
+
+.projects-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects-content-primeiro, .projects-content-segundo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects img{
+    width: 200px;
+    height: 200px;
+}
+.projects-content ul{
+    list-style: none;
+   
+}
+
+.projects-content ion-icon{
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+}
+
+.projects ion-icon:hover{
+   color: rgb(154, 111, 3);
+}
+
 /*INICIO DA terceira PARTE - HABILIDADES*/
 .skills-content{
     display: grid;
