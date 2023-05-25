@@ -157,19 +157,21 @@ h2{
 /*INICIO DA SEGUNDA PARTE -PROJETOS*/
 
 
+
 .projects-content{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
-.projects-content-primeiro, .projects-content-segundo{
+.projects-primeiro, .projects-segundo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .projects img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 .projects-content ul{
     list-style: none;
