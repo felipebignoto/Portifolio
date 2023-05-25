@@ -3,6 +3,9 @@
     --blue-color:  blue;
     --black-color: rgb(0, 0, 0);
 }
+
+
+
 a{
     text-decoration: none;
     
@@ -23,13 +26,17 @@ body{
     font-size: 20px;
     color: var(--white-color);
     line-height: 1.5;
+    font-family: 'Noto Serif Display', serif;
 }
 
 h1{
     font-size: 50px;
     padding: 20px;
     text-transform: uppercase;
-    
+}
+
+h1,h2,h3{
+    font-family: 'Playfair', serif;
 }
 
 h2{
@@ -40,6 +47,7 @@ h2{
     min-height: 100vh;
     position: relative;
     padding: 30px;
+    border: 1px solid white;
 }
 
 .section h1{
@@ -57,19 +65,21 @@ h2{
 
 .main-bg h1{
     color: var(--white-color);
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
+   /* -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;*/
 }
 
 .second-bg h1{
     color: var(--white-color);
+    /*
     -webkit-text-stroke-width: 3px;
+    */
     -webkit-text-stroke-color: black;
 }
 
 .second-bg{
     /*background-image: url(../img/subtle-prism2.svg);*/
-    background-color: #31109B;
+    background-color: #313B56;
     background-attachment: fixed;
     background-size: cover;
     color: var(--white-color);
@@ -86,10 +96,17 @@ h2{
     top:0;
     left: 0;
     z-index: 200;
-    background-color: #827D95;
+
     width: 100%;
     height: 50px;
+
+    background-color: #827D95;
+    border: 2px solid white;
+
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content:space-around ;
  
 }
 
@@ -123,42 +140,36 @@ h2{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin-top: 25px;
+    
 }
 
 .home-texto{
     text-align: center;
+   
 }
 
 .home-texto h2{
     margin-bottom: 10%;
 }
 
-.home h1, #contact h1{
+.home h1{
     margin-bottom: 5%;
 }
-/*INICIO DA SEGUNDA PARTE - HABILIDADES*/
-
+/*INICIO DA terceira PARTE - HABILIDADES*/
 .skills-content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-/*Inicio da terceira parte--PROJETOS*/
-
-.skills-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
    
 }
 
-#skills h1{
-    margin-bottom:10%;
+.skills-content-colunas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.skills-content{
-    text-align: center;
+.skills-content-colunas, .skills-content-text{
+    margin: auto;
 }
 
 .skills-content ul li{
@@ -176,7 +187,7 @@ h2{
 }
 
 .contact-content h2{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 1);
 }
 
 .contact-links ion-icon{
