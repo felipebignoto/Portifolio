@@ -91,34 +91,60 @@ h2{
     padding: 40px;
 }
 /*Menu*/
-.menu{
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 200;
 
+nav{
+    width: 100%;
+    position: fixed; top: 0; left: 0; z-index: 9999;
+}
+
+.menu-list{
     width: 100%;
     height: 50px;
+    cursor: pointer;
+   
+}
 
-    background-color: #827D95;
-    border: 2px solid white;
-
+nav ul{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    background-color: #827D95;
 }
 
-.menu-grande a{
-    padding-right: 15px;
+nav ul#icone-menu-mobile{
+    float: right;
+    display: none;
+}
+
+nav ul li{
+    list-style: none;
+   
+}
+
+nav ul li a{
+    color: white;
     text-decoration: none;
-    color: black;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 80%;
 }
 
-.menu-grande a:hover{
-    color: rgb(230, 168, 11);
+nav ul li a:hover{
+    background-color: rgb(154, 111, 3);
+    transition-duration: 0.6s;
 }
 
+nav ion-icon{
+    width: 45px;
+    height: 45px;
+   color: white;
+}
 
+nav ion-icon:hover{
+    color:rgb(154, 111, 3);
+    cursor: pointer;
+}
 /*Inicio da primeira parte---HOME*/
 
 
@@ -257,47 +283,27 @@ h2{
 .contact-content a{
     color: var(--white-color);
 }
-/*Meu responsivo*/
-.mobile-menu-icon{
-    display: none;
-}
 
-.menu-mobile{
-    display: none;
-}
 
-@media(max-width: 600px){
-    .menu-grande{
+@media(max-width: 619px){
+   
+    .menu-list{
         display: none;
     }
 
-    .menu{
-        justify-content: end;
-    }
-    .mobile-menu-icon{
+    nav ul#icone-menu-mobile{
         display: block;
-    }
-
-    .mobile-menu-icon ion-icon{
-        color: black;
+        color:white ;
         background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding-right: 10px;
-        height: 30px;
-        width: 30px;
     }
 
-    .menu-mobile{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 3px;
-        display: block;
+    nav ul#icone-menu-mobile li button{
+        background-color: transparent;
     }
 
-    .open{
-        display: block;
+    nav ul li{
+        background-color: transparent;
+        
     }
 
     .contact-content{
