@@ -11,12 +11,25 @@
 </head>
 
 <body>
-    <section id="menu" class="menu">
-        <a href="#Home">HOME</a>
-        <a href="#projects">PROJETOS</a>
-        <a href="#skills">HABILIDADES</a>
-        <a href="#contact">CONTATO</a>
-    </section>
+    <nav id="menu" class="menu">
+        <div class="menu-grande">
+            <a href="#Home">HOME</a>
+            <a href="#projects">PROJETOS</a>
+            <a href="#skills">HABILIDADES</a>
+            <a href="#contact">CONTATO</a>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+
+        <div class="menu-mobile">
+            <a href="#Home">HOME</a>
+            <a href="#projects">PROJETOS</a>
+            <a href="#skills">HABILIDADES</a>
+            <a href="#contact">CONTATO</a>
+        </div>
+    </nav>
 
     <section id="Home" class="main-bg main-content section home">
         <h1>Portifólio</h1>
@@ -150,6 +163,7 @@
     </section>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
