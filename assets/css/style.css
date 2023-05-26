@@ -2,6 +2,7 @@
     --white-color: white;
     --blue-color:  blue;
     --black-color: rgb(0, 0, 0);
+    --gray-color: rgb(198, 193, 193);
 }
 
 
@@ -59,7 +60,7 @@ h2{
     background-color: #1A055D;
     background-attachment: fixed;
     background-size: cover;
-    color: var(--white-color);
+    color: var(--gray-color);
 }
 
 .main-bg h1{
@@ -256,4 +257,46 @@ h2{
 
 .contact-content a{
     color: var(--white-color);
+}
+
+@media(max-width: 600px){
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-links{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .skills-content-colunas{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .skills-content ul{
+        padding-bottom: 5%;
+    }
+
+    .projects-primeiro, .projects-segundo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img{
+        border: 5px solid black;
+        border-radius: 40%;
+        width: 50%;
+        margin-top: 5%;
+     }
 }
