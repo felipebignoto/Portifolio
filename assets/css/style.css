@@ -298,19 +298,23 @@ nav .menu-list ion-icon:hover{
     }
 
     .teste{
+
+        position: absolute;
+        left: auto;
+        z-index: 201;
+
+
         display: flex;
         flex-direction: column;
 
-        width: 100vh;
+        width: 100%;
         height: 100vh;
         
         background-color: #827D95;
         text-align: center;
         justify-content: space-around;
-
-
-        position: absolute;
-        z-index: 201;
+        align-items: center;
+       
     }
 
     nav ul#icone-menu-mobile{
