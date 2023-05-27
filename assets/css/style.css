@@ -202,6 +202,8 @@ nav .menu-list ion-icon:hover{
 .projects img{
     width: 150px;
     height: 150px;
+    border-radius: 7px;
+    border: 6px black double;
 }
 .projects-content ul{
     list-style: none;
@@ -216,6 +218,7 @@ nav .menu-list ion-icon:hover{
 
 .projects ion-icon:hover{
    color: rgb(154, 111, 3);
+   transition-duration: 0.2s;
 }
 
 /*INICIO DA terceira PARTE - HABILIDADES*/
@@ -265,7 +268,7 @@ nav .menu-list ion-icon:hover{
 
 .contact-links ion-icon:hover{
     color: rgb(154, 111, 3);
-    
+    transition-duration: 0.2s;
 }
 
 .contact-informacoes, .contact-links{
@@ -286,6 +289,12 @@ nav .menu-list ion-icon:hover{
 
 .contact-content a{
     color: var(--white-color);
+}
+
+footer{
+    background-color: #827D95;
+    text-align: center;
+    border: 1px solid white;
 }
 
 
