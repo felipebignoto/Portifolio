@@ -297,6 +297,7 @@ nav .menu-list ion-icon:hover{
         display: none;
     }
 
+    
     .teste{
 
         position: absolute;
@@ -334,6 +335,8 @@ nav .menu-list ion-icon:hover{
         background-color: transparent;
         
     }
+
+    
 
     .contact-content{
         display: flex;
