@@ -130,7 +130,7 @@ nav ul li a{
     font-size: 80%;
 }
 
-nav ul .menu-list li a:hover{
+nav ul.menu-list li a:hover{
     background-color: rgb(154, 111, 3);
     transition-duration: 0.6s;
 }
