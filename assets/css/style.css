@@ -130,7 +130,7 @@ nav ul li a{
     font-size: 80%;
 }
 
-nav ul li a:hover{
+nav ul .menu-list li a:hover{
     background-color: rgb(154, 111, 3);
     transition-duration: 0.6s;
 }
@@ -141,10 +141,14 @@ nav ion-icon{
    color: white;
 }
 
-nav ion-icon:hover{
+nav .menu-list ion-icon:hover{
     color:rgb(154, 111, 3);
     cursor: pointer;
 }
+
+.menu-list-mobile{
+    display: none;
+ }
 /*Inicio da primeira parte---HOME*/
 
 
@@ -285,20 +289,41 @@ nav ion-icon:hover{
 }
 
 
+
+
 @media(max-width: 619px){
    
     .menu-list{
         display: none;
     }
 
+    .teste{
+        display: flex;
+        flex-direction: column;
+
+        width: 100vh;
+        height: 100vh;
+        
+        background-color: #827D95;
+        text-align: center;
+        justify-content: space-around;
+
+
+        position: absolute;
+        z-index: 201;
+    }
+
     nav ul#icone-menu-mobile{
         display: block;
         color:white ;
         background-color: transparent;
+        position: absolute;
+        z-index: 202;
+        right: 0;
     }
 
     nav ul#icone-menu-mobile li button{
-        background-color: transparent;
+        background-color: #827D95;
     }
 
     nav ul li{
