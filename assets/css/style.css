@@ -231,7 +231,11 @@ nav .menu-list ion-icon:hover{
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    
+}
 
+.skills h1{
+    margin-bottom: 5% ;
 }
 
 .skills-content-colunas{
@@ -239,8 +243,9 @@ nav .menu-list ion-icon:hover{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.skills-content-colunas, .skills-content-text{
+.skills-content-colunas {
     margin: auto;
+    padding: 0;
 }
 
 .skills-content ul li{
@@ -312,9 +317,7 @@ footer{
 }
 
 
-
-
-@media(max-width: 619px){
+@media(max-width: 660px){
    
     .menu-list{
         display: none;
@@ -356,7 +359,6 @@ footer{
         
     }
 
-    
 
     .contact-content{
         display: flex;
@@ -373,12 +375,20 @@ footer{
     .skills-content-colunas{
         display: flex;
         flex-direction: column;
-        
     }
 
-    .skills-content ul{
-        padding-bottom: 5%;
+    .skills-content-colunas ul li{
+        line-height: 1.3;
     }
+
+    .skills-content-colunas div h2{
+        margin-top: 5%;
+    }
+
+    .skills h1{
+        margin-bottom: 5%;
+    }
+
 
     .projects-primeiro, .projects-segundo {
         display: grid;
@@ -400,6 +410,7 @@ footer{
 
      h1{
         font-size: 35px;
+        padding-top: 5px;
      }
 
      h2{
@@ -410,6 +421,77 @@ footer{
         width: 30px;
         height:30px;
     }
+}
 
+
+@media(min-width: 661px) and (max-width: 768px){
+
+    /*MENU RESPONSIVO*/
+    .menu-list{
+        display: none;
+    }
     
+    .teste{
+
+        position: absolute;
+        left: auto;
+        z-index: 201;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100vh;
+        
+        background-color: #827D95;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul#icone-menu-mobile{
+        display: block;
+        color:white ;
+        background-color: transparent;
+        position: absolute;
+        z-index: 202;
+        right: 0;
+    }
+
+    nav ul#icone-menu-mobile li button{
+        background-color: #827D95;
+    }
+
+    nav ul li{
+        background-color: transparent;
+        
+    }
+    /*FINAL DO MENU RESPONSIVO*/
+
+    h1{
+        font-size: 35px;
+        padding-top: 5px;
+     }
+
+     h2{
+        font-size: 25px;
+     }
+
+    .projects-content ion-icon{
+        width: 30px;
+        height:30px;
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img{
+        border: 5px solid black;
+        border-radius: 40%;
+        width: 50%;
+        margin-top: 5%;
+    }
 }
