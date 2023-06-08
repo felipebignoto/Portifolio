@@ -231,9 +231,7 @@ nav .menu-list ion-icon:hover{
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
-    margin-top: 5%;
-   
-   
+
 }
 
 .skills-content-colunas{
