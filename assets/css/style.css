@@ -1,11 +1,9 @@
 :root{
     --white-color: white;
-    --blue-color:  blue;
+    --blue-color: #1a055d;
     --black-color: rgb(0, 0, 0);
     --gray-color: #c6c1c1;
 }
-
-
 
 a{
     text-decoration: none;
@@ -33,6 +31,7 @@ h1{
     font-size: 50px;
     padding-top: 50px;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 h1,h2,h3{
@@ -60,7 +59,7 @@ h2{
 
 .main-bg{
     /*background-image: url(../img/subtle-prism.svg);*/
-    background-color: #1a055d;
+    background-color: var(--blue-color);
     background-attachment: fixed;
     background-size: cover;
     color: var(--gray-color);
@@ -98,6 +97,7 @@ h2{
 nav{
     width: 100%;
     position: fixed; top: 0; left: 0; z-index: 9999;
+    border: 1px solid var(--white-color);
 }
 
 .menu-list{
@@ -166,6 +166,7 @@ nav .menu-list ion-icon:hover{
    width: 90%;
    margin-left: 5%;
    margin-right: 5%;
+   
 }
 
 .home-content{
@@ -208,6 +209,7 @@ nav .menu-list ion-icon:hover{
     height: 150px;
     border-radius: 7px;
     border: 6px black double;
+    box-shadow: 15px 15px 15px var(--black-color);
 }
 .projects-content ul{
     list-style: none;
@@ -319,6 +321,9 @@ footer{
 
 @media(max-width: 660px){
    
+    .section{
+        min-height: 0vh;
+    }
     .menu-list{
         display: none;
     }
